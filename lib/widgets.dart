@@ -17,7 +17,7 @@ class Widget1 extends StatefulWidget {
         children: [
           Image.asset(
             img,
-            width: MediaQuery.of(context).size.width * 0.25,
+            width: MediaQuery.of(context).size.width * 0.2,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,7 +25,7 @@ class Widget1 extends StatefulWidget {
             children: [
               Text(title,
                   style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.width * 0.06,
+                      fontSize: MediaQuery.of(context).size.width * 0.055,
                       fontWeight: FontWeight.bold)),
               Text(time,
                   style: TextStyle(
