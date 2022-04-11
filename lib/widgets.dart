@@ -81,7 +81,7 @@ class Widget1 extends StatefulWidget {
     String img,
     String title,
     String txt,
-    String url,
+    void fn()
   ) {
     return Container(
       margin: const EdgeInsets.only(top: 15.0),
@@ -109,7 +109,7 @@ class Widget1 extends StatefulWidget {
           ),
           RaisedButton(
             onPressed: () {
-              Navigator.pushNamed(context, url);
+              fn();
             },
             color: Colors.cyan,
             child: Text(
@@ -126,7 +126,7 @@ class Widget1 extends StatefulWidget {
   }
 
   static pqr(BuildContext context, String title, String txt, String img1,
-      String img2, String url) {
+      String img2, void fn()) {
     return Container(
       margin: const EdgeInsets.only(top: 15.0),
       padding: const EdgeInsets.all(15.0),
@@ -144,7 +144,7 @@ class Widget1 extends StatefulWidget {
                       fontWeight: FontWeight.bold)),
               RaisedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, url);
+                  fn();
                 },
                 color: Colors.cyan,
                 child: Text(

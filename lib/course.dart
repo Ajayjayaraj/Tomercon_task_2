@@ -38,7 +38,7 @@ class _CourseState extends State<Course> {
                       indicatorColor: Colors.cyan,
                       tabs: [
                         Tab(text: "Chapters"),
-                        Tab(text: "Practise"),
+                        Tab(text: "Practice"),
                         Tab(text: "Test"),
                       ],
                     ),
@@ -50,15 +50,15 @@ class _CourseState extends State<Course> {
                               Widget1.abc('images/inst.jpg', "Installation",
                                   "10:30", context),
                               Widget1.abc('images/bas.png', "Dart Basic",
-                                  "10:30", context),
-                              Widget1.abc('images/ui.jpg', "UI Basics", "10:30",
+                                  "15:10", context),
+                              Widget1.abc('images/ui.jpg', "UI Basics", "8:12",
                                   context),
                             ],
                           ),
                           ListView(
                             children: [
                               Widget1.pqr(context, "Login Page UI",
-                                  "Estimated time : 1 day", "images/luii.jpg", "images/luii.jpg", "/course"),
+                                  "Estimated time : 1 day", "images/luii.jpg", "images/luii.jpg", (){}),
                             ],
                           ),
                           ListView(

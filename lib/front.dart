@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import 'course.dart';
 import 'widgets.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,7 +25,7 @@ class _HomePage extends State<HomePage> {
         leading: const Padding(
           padding: EdgeInsets.all(10.0),
           child: Image(
-            image: AssetImage('images/flu.jpg'),
+            image: AssetImage('images/logo.png'),
           ),
         ),
         backgroundColor: Colors.white,
@@ -136,7 +137,7 @@ class _HomePage extends State<HomePage> {
                                   child: TabBarView(children: [
                                     ListView(
                                       children: [
-                                        Widget1.zxc(context, 'images/flu.jpg', "Flutter", "3/14 Courses Completed", "/course"),
+                                        Widget1.zxc(context, 'images/flu.jpg', "Flutter", "3/14 Courses Completed", (){Navigator.push(context, MaterialPageRoute(builder: (context) => Course()));}),
                                       ],
                                     ),
                                     const Center(
